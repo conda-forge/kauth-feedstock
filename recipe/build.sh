@@ -12,6 +12,6 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
 
 make -j ${CPU_COUNT}
 # this test hangs
-ctest -E KAuthHelperTest
+ctest -E "KAuthHelperTest.*|KAuthPolicyGenTest.*"
 make install
 popd
