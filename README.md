@@ -5,7 +5,7 @@ Home: https://api.kde.org/frameworks/kauth/html/index.html
 
 Package license: LGPL-v2.1-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Execute actions as privileged user
 
