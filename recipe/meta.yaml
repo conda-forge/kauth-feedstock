@@ -1,5 +1,5 @@
 {% set name = "kauth" %}
-{% set version = "5.76.0" %}
+{% set version = "6.0.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kauth-{{ version }}.tar.xz
-  sha256: c277a7ab750158a56381d8f74b8ebed5205b785eca2444c65cbf59d429958a89
+  sha256: 66046698d2584692d5397a6ec808b2c9f8b7882a0f85233be9cd69283d03c768
 
 build:
   number: 0
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - make
